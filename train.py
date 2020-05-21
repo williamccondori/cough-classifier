@@ -107,4 +107,4 @@ scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 
 # Se realiza el entrenamiento.
 result = train(model, data_loaders, criterion, optimizer, scheduler, epochs)
-torch.save(result, f'result/cough_result.model')
+torch.save(result, 'result/cough_result.model')
