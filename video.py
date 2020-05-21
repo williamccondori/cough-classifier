@@ -86,7 +86,9 @@ if capture.isOpened():
                 # Transformacion de coordenadas.
                 bounding_box = convert(bounding_box)
                 bounding_box = rescale((width, height), (darknet_width,
-                                                darknet_height), bounding_box)
+                                                         darknet_height), bounding_box)
+
+                print(bounding_box)
                 """
                 person = image[box[1]:box[3], box[0]:box[2]]
                 print(person)
